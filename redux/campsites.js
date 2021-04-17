@@ -1,4 +1,4 @@
-import * as ActionTypes from ".ActionTypes";
+import * as ActionTypes from "./ActionTypes";
 
 export const campsites = (
   state = { isLoading: true, errMess: null, campsites: [] },
@@ -13,7 +13,7 @@ export const campsites = (
         campsites: action.payload,
       };
 
-    case ActionTypes.CAMPSITE_LOADING:
+    case ActionTypes.CAMPSITES_LOADING:
       return { ...state, isLoading: true, errMess: null, campsites: [] };
 
     case ActionTypes.CAMPSITES_FAILED:
