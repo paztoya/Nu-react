@@ -177,7 +177,7 @@ class RegisterTab extends Component {
       { format: ImageManipulator.SaveFormat.PNG }
     );
     console.log(processedImage);
-    // saveToLibrary()
+    // complete thebonus here saveToLibrary()
     this.setState({ imageUrl: processedImage.uri });
   };
 
